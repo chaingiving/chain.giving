@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For Organizations — Chain.Giving</title>
+  <meta name="description" content="Documentation, onboarding, and FAQs for organizations fundraising on Chain.Giving." />
+  <link rel="icon" href="media/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <img src="media/chain_giving_header.png" alt="Chain.Giving" />
+    </a>
+    <nav class="nav-links">
+      <a href="for-organizations.html">For Organizations</a>
+      <a href="for-donors.html">For Donors</a>
+      <a href="https://chaingiving.substack.com/" target="_blank" rel="noopener">Blog</a>
+      <a href="index.html#faq">FAQ</a>
+      <a class="btn btn-primary" href="https://app.chain.giving/" target="_blank" rel="noopener">Launch App →</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">For Organizations</span>
+    <h1>Fundraising, reinvented.</h1>
+    <p>Everything you need to create your fundraising program, tokenize your operations, and prove impact on-chain.</p>
+    <div class="hero-ctas" style="margin-top:28px">
+      <a class="btn btn-primary" href="https://app.chain.giving/" target="_blank" rel="noopener">Open the App →</a>
+      <a class="btn btn-ghost" href="mailto:contact@chain.giving">Contact us for onboarding</a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="doc-layout">
+
+    <aside class="doc-nav">
+      <h4>Getting started</h4>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#onboarding">Onboarding</a></li>
+        <li><a href="#fundraising">Running a campaign</a></li>
+        <li><a href="#funding-target">Target & deadline</a></li>
+        <li><a href="#token-types">Token types</a></li>
+        <li><a href="#token-distribution">Token distribution</a></li>
+        <li><a href="#token-tracking">Token tracking</a></li>
+        <li><a href="#custody">Custody & payouts</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </aside>
+
+    <article class="doc-content">
+
+      <h2 id="overview">Overview</h2>
+      <p>Chain.Giving lets any organization or individual launch transparent fundraising campaigns. Our platform manage your operations end-to-end, from collecting donations to distributing tokens redeemable for real-world benefits like vouchers, event tickets, and access passes.</p>
+
+      <div class="doc-placeholder">
+
+        <!-- Unified diagram: How a Chain.Giving program works -->
+        <div style="margin:40px 0 40px">
+          <p style="font-weight:600; font-size:0.95rem; color:var(--ink-soft); margin-bottom:12px">How a Chain.Giving program works</p>
+          <svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;height:auto;font-family:'Inter',system-ui,sans-serif">
+            <defs>
+              <!-- Step 1: Donate (blue) -->
+              <marker id="arw-blue" viewBox="0 0 10 7" refX="9" refY="3.5" markerWidth="9" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 3.5 L0 7z" fill="#3B82F6"/>
+              </marker>
+              <!-- Step 2: Payout / Distribution (teal) -->
+              <marker id="arw-teal" viewBox="0 0 10 7" refX="9" refY="3.5" markerWidth="9" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 3.5 L0 7z" fill="#258597"/>
+              </marker>
+              <!-- Step 3: Redeem (amber) -->
+              <marker id="arw-amber" viewBox="0 0 10 7" refX="9" refY="3.5" markerWidth="9" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 3.5 L0 7z" fill="#D97706"/>
+              </marker>
+              <!-- Step 4: Invoice vs Payment (purple) -->
+              <marker id="arw-purple" viewBox="0 0 10 7" refX="9" refY="3.5" markerWidth="9" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 3.5 L0 7z" fill="#7C3AED"/>
+              </marker>
+              <!-- Soft shadow for cards -->
+              <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="116%">
+                <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f2327" flood-opacity="0.07"/>
+              </filter>
+              <!-- Subtle shadow for hexagon -->
+              <filter id="hexShadow" x="-8%" y="-8%" width="116%" height="124%">
+                <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#258597" flood-opacity="0.15"/>
+              </filter>
+            </defs>
+
+            <!-- ==================== LEFT: Donor ==================== -->
+            <rect x="10" y="98" width="160" height="64" rx="14" fill="white" stroke="var(--teal-200)" stroke-width="1.5" filter="url(#cardShadow)"/>
+            <svg x="58" y="104" width="44" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            <text x="90" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">Donor</text>
+
+            <!-- Step 1: Arrow Donor → Hexagon (blue) -->
+            <line x1="175" y1="130" x2="298" y2="130" stroke="#3B82F6" stroke-width="1.5" marker-end="url(#arw-blue)"/>
+            <rect x="194" y="117" width="72" height="22" rx="11" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+            <circle cx="207" cy="128" r="8" fill="#3B82F6"/>
+            <text x="207" y="132" text-anchor="middle" font-size="8.5" font-weight="700" fill="white">1</text>
+            <text x="241" y="132" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">Donate</text>
+
+            <!-- ==================== CENTER: Hexagon ==================== -->
+            <polygon points="390,42 478,78 478,172 390,208 302,172 302,78" fill="var(--teal-50)" stroke="var(--teal)" stroke-width="2" stroke-linejoin="round" filter="url(#hexShadow)"/>
+            <!-- Chain.Giving logo -->
+            <svg x="360" y="62" width="60" height="46" viewBox="0 0 200 200">
+              <path d="M 100 30 C 70 -5, 20 10, 20 50 C 20 85, 60 110, 100 125 C 140 110, 180 85, 180 50 C 180 10, 130 -5, 100 30 Z" fill="var(--teal)"/>
+              <path d="M 30 150 Q 45 141, 70 141 L 120 141 A 5 5 0 0 1 120 151 L 90 151 A 4 4 0 0 0 90 159 L 124 159 L 174 129 A 5.8 5.8 0 0 1 180 139 L 130 169 C 115 178, 60 190, 20 175 Z" fill="var(--teal)"/>
+            </svg>
+            <text x="390" y="128" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Chain.Giving</text>
+            <text x="390" y="144" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Program</text>
+            <text x="390" y="163" text-anchor="middle" font-size="9.5" fill="var(--muted)">Smart contract</text>
+            <text x="390" y="175" text-anchor="middle" font-size="9.5" fill="var(--muted)">on Ethereum</text>
+
+            <!-- ==================== Simultaneous split ==================== -->
+            <!-- Step 2a: Upper arrow Hexagon → Organization (teal) -->
+            <path d="M 478 100 L 530 100 L 530 55 L 585 55" stroke="#258597" stroke-width="1.5" fill="none" marker-end="url(#arw-teal)"/>
+            <rect x="497" y="49" width="66" height="22" rx="11" fill="#f0f8fa" stroke="#b3dae0" stroke-width="1"/>
+            <circle cx="510" cy="60" r="8" fill="#258597"/>
+            <text x="510" y="64" text-anchor="middle" font-size="8.5" font-weight="700" fill="white">2</text>
+            <text x="541" y="64" text-anchor="middle" font-size="10" font-weight="600" fill="#1a6b7a">Payout</text>
+
+            <!-- Step 2b: Lower arrow Hexagon → User (teal) -->
+            <path d="M 478 155 L 530 155 L 530 185 L 585 185" stroke="#258597" stroke-width="1.5" fill="none" marker-end="url(#arw-teal)"/>
+            <rect x="493" y="173" width="78" height="22" rx="11" fill="#f0f8fa" stroke="#b3dae0" stroke-width="1"/>
+            <circle cx="506" cy="184" r="8" fill="#258597"/>
+            <text x="506" y="188" text-anchor="middle" font-size="8.5" font-weight="700" fill="white">2</text>
+            <text x="543" y="188" text-anchor="middle" font-size="10" font-weight="600" fill="#1a6b7a">Distribution</text>
+
+            <!-- ==================== TOP RIGHT: Organization ==================== -->
+            <rect x="585" y="20" width="180" height="68" rx="14" fill="white" stroke="var(--teal-200)" stroke-width="1.5" filter="url(#cardShadow)"/>
+            <!-- Building icon -->
+            <svg x="593" y="26" width="36" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h1"/><path d="M9 13h1"/><path d="M14 9h1"/><path d="M14 13h1"/><path d="M9 21v-4h6v4"/>
+            </svg>
+            <text x="685" y="46" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">Organization</text>
+            <text x="685" y="63" text-anchor="middle" font-size="10.5" fill="var(--muted)">Receives funds</text>
+
+            <!-- ==================== MIDDLE RIGHT: User ==================== -->
+            <rect x="585" y="150" width="180" height="68" rx="14" fill="white" stroke="var(--teal-200)" stroke-width="1.5" filter="url(#cardShadow)"/>
+            <!-- Person icon -->
+            <svg x="593" y="156" width="36" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            <text x="685" y="176" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">User</text>
+            <text x="685" y="193" text-anchor="middle" font-size="10.5" fill="var(--muted)">Receives tokens</text>
+
+            <!-- ==================== BOTTOM RIGHT: Provider ==================== -->
+            <rect x="585" y="270" width="180" height="65" rx="14" fill="white" stroke="var(--teal-200)" stroke-width="1.5" filter="url(#cardShadow)"/>
+            <!-- Storefront icon (awning + door) -->
+            <svg x="593" y="280" width="36" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l1-4h16l1 4"/><path d="M3 9v1a3 3 0 0 0 6 0V9"/><path d="M9 9v1a3 3 0 0 0 6 0V9"/><path d="M15 9v1a3 3 0 0 0 6 0V9"/><path d="M4 13v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M9 21v-5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v5"/>
+            </svg>
+            <text x="685" y="300" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">Provider</text>
+            <text x="685" y="317" text-anchor="middle" font-size="10.5" fill="var(--muted)">Delivers goods &amp; services</text>
+
+            <!-- Step 3: Arrow User → Provider (amber) -->
+            <line x1="675" y1="218" x2="675" y2="265" stroke="#D97706" stroke-width="1.5" marker-end="url(#arw-amber)"/>
+            <rect x="682" y="231" width="78" height="22" rx="11" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
+            <circle cx="695" cy="242" r="8" fill="#D97706"/>
+            <text x="695" y="246" text-anchor="middle" font-size="8.5" font-weight="700" fill="white">3</text>
+            <text x="730" y="246" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Redeem</text>
+
+            <!-- Step 4: Organization ↔ Provider (purple) -->
+            <path d="M 770 56 L 810 56 L 810 302 L 770 302" stroke="#7C3AED" stroke-width="1.5" fill="none" stroke-dasharray="6 3"/>
+            <!-- Arrowhead into Organization -->
+            <line x1="778" y1="56" x2="770" y2="56" stroke="#7C3AED" stroke-width="1.5" marker-end="url(#arw-purple)"/>
+            <!-- Arrowhead into Provider -->
+            <line x1="778" y1="302" x2="770" y2="302" stroke="#7C3AED" stroke-width="1.5" marker-end="url(#arw-purple)"/>
+            <!-- Circled 4 + Label centered on vertical line, two lines -->
+            <rect x="783" y="158" width="70" height="34" rx="8" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1"/>
+            <circle cx="797" cy="175" r="8" fill="#7C3AED"/>
+            <text x="797" y="179" text-anchor="middle" font-size="8.5" font-weight="700" fill="white">4</text>
+            <text x="828" y="171" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5B21B6">Invoice vs</text>
+            <text x="828" y="184" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5B21B6">Payment</text>
+
+          </svg>
+        </div>
+
+        <ol>
+          <li style="color:#1D4ED8">Donors contribute to a program. Each program defines both <strong>custom tokens</strong> which represent <strong>entitlements to goods or services</strong> and a fundraising target.</li>
+          <li style="color:#1a6b7a">Once the target is reached, the smart contract simultaneously <strong>distributes</strong> tokens to <strong>user wallets</strong> and <strong>releases the funds</strong> to the organization. Every step is recorded on-chain for all to see.</li>
+          <li style="color:#92400E">Users <strong>redeem their tokens</strong> at a participating provider (e.g. a local supermarket, pharmacy, or online store) in exchange for the program's goods or services.</li>
+          <li style="color:#5B21B6">Providers burn redeemed tokens to <strong>invoice and receive payments</strong> from the organization, closing the loop.</li>
+        </ol>
+      </div>
+
+      <h2 id="onboarding">Creating an account and public profile for your organization</h2>
+      <p>Organization creation is currently invite-only. Reach out to <a href="mailto:contact@chain.giving">contact@chain.giving</a> to create your organization.</p>
+      <div class="doc-placeholder">📝 Step-by-step onboarding guide coming soon.</div>
+
+      <h2 id="fundraising">Creating a Chain.Giving program</h2>
+      <p>Organizations can run any number of programs. Each program has two parts: a crowdfunding campaign that collects donations, and a token distribution plan that defines what your program users will receive once funding goals are met. Every program is backed by its own smart contract — owned exclusively by your organization — that automatically enforces the rules you set.</p>
+      <div class="doc-placeholder">📝 Program playbook coming soon.</div>
+
+      <h2 id="funding-target">Defining your crowdfunding target and deadline</h2>
+      <p>To start receiving donations for a program, set a funding target and a deadline (the number of days the campaign will stay open). On Chain.Giving, deadlines are final and cannot be extended. This guarantees donors a clear, trustworthy timeline. If you need to continue fundraising, simply create a new program.</p>
+      <div class="doc-placeholder">📝 Campaign playbook coming soon.</div>
+
+      <h2 id="custody">Custody, payouts, and fiat off-ramps</h2>
+      <p>Learn about your options for holding donated funds on-chain and converting them into your local currency when needed.</p>
+      <div class="doc-placeholder">📝 Custody and payout documentation coming soon.</div>
+
+      <h2 id="token-types">Define your token types</h2>
+      <p>Each program uses an ERC-1155 Multi Token contract, which lets you create multiple token types within a single program. Tokens can represent anything you need: proof of participation, vouchers for goods or services, unique NFT rewards, and more.</p>
+      <div class="doc-placeholder">📝 Token types technical reference coming soon. Info about Max Supply, Transferable and Burnable options</div>
+
+      <h2 id="token-distribution">Define your token distribution</h2>
+      <p>Specify who receives each token type and in what quantity. Once fundraising is complete and the program executes, tokens are distributed automatically to the listed beneficiaries. You can also lock a distribution so donors know, before they give, precisely where their contribution will go.</p>
+      <div class="doc-placeholder">📝 Token distribution technical reference coming soon.</div>
+
+      <h2 id="token-tracking">Track token allocation and usage</h2>
+      <p>Beneficiaries can redeem tokens directly through the Chain.Giving wallet built into the app. Every redemption is recorded on-chain, giving your organization and your donors full visibility into how deliverables are used.</p>
+      <div class="doc-placeholder">📝 Token distribution technical reference coming soon.</div>
+
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <div class="faq-wrap" style="margin:0">
+        <details class="faq">
+          <summary>Who can join Chain.Giving as an organization?</summary>
+          <div class="faq-body">Registered nonprofits, cultural or charitable associations, as well as individual artists and creators are welcome. We review each applicant to ensure the platform is used for legitimate social good.</div>
+        </details>
+
+        <details class="faq">
+          <summary>How long does onboarding take?</summary>
+          <div class="faq-body">Most organizations complete onboarding within a few days. Contact us to start the process.</div>
+        </details>
+
+        <details class="faq">
+          <summary>Can we convert donations to local currency?</summary>
+          <div class="faq-body">Yes, you can use off-ramp providers (WIP) to convert to local currency where regulation permits.</div>
+        </details>
+
+        <details class="faq">
+          <summary>What does it cost?</summary>
+          <div class="faq-body">Chain.Giving does not charge any platform fees so 100% of each donation goes to its intended purpose. However, blockchains require small gas fees to process transactions (typically less than 1 cent per transaction). Chain.Giving includes a sponsoring system so organizations can cover these gas fees on behalf of their donors. This way, the only cost you pay is the minimal fee that keeps the network secure. No intermediaries take a cut.</div>
+        </details>
+
+        <details class="faq">
+          <summary>How do we prove impact to our donors?</summary>
+          <div class="faq-body">Every token distribution is recorded on-chain, so donors can trace funds from contribution to delivery in real time. You can also export verifiable reports for grant makers and auditors.</div>
+        </details>
+      </div>
+
+      <div style="margin-top:56px">
+        <div class="cta-band">
+          <h2>Get started</h2>
+          <p>Talk to our team about joining Chain.Giving and opening a fundraising channel for your project.</p>
+          <a class="btn btn-primary btn-lg" href="mailto:contact@chain.giving">contact@chain.giving</a>
+        </div>
+      </div>
+
+    </article>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="media/chain_giving_header.png" alt="Chain.Giving" />
+        </a>
+        <p>Truthful giving for everyone</p>
+        <div class="socials">
+          <a href="https://x.com/chaingiving" target="_blank" rel="noopener" aria-label="Chain.Giving on X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21.5l-7.5 8.57L22.5 22h-6.84l-5.36-6.99L4.1 22H.84l8.02-9.17L.5 2h7.02l4.84 6.4L18.244 2Zm-2.4 18h1.88L7.24 4H5.24l10.6 16Z"/></svg>
+          </a>
+          <a href="https://github.com/chaingiving" target="_blank" rel="noopener" aria-label="Chain.Giving on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.44-2.29 1.17-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.73.8 1.17 1.83 1.17 3.09 0 4.43-2.69 5.41-5.25 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.12 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/101804480/admin/feed/posts/" target="_blank" rel="noopener" aria-label="Chain.Giving on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.86-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.33V9h3.41v1.56h.05c.48-.9 1.64-1.86 3.38-1.86 3.61 0 4.28 2.38 4.28 5.47v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="https://app.chain.giving/" target="_blank" rel="noopener">Launch app</a></li>
+          <li><a href="for-organizations.html">For organizations</a></li>
+          <li><a href="for-donors.html">For donors</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://chaingiving.substack.com/" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@chain.giving">contact@chain.giving</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="y"></span> Chain.Giving. All rights reserved.</span>
+      <span>Built on Ethereum.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = String(new Date().getFullYear());</script>
+</body>
+</html>
