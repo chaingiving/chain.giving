@@ -20,6 +20,7 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+html { scroll-padding-top: 88px; }
 body {
   font-family: var(--font);
   color: var(--ink);
@@ -312,23 +313,30 @@ section { padding: 90px 0; }
 }
 .feature {
   background: #fff;
-  padding: 32px;
+  padding: 28px 32px;
   border-radius: 16px;
   border: 1px solid var(--line);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.feature:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: var(--teal-200);
 }
 .feature .icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
   background: var(--teal-50);
   color: var(--teal);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  margin: 0 auto 20px;
 }
-.feature .icon svg { width: 22px; height: 22px; }
-.feature h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.feature .icon svg { width: 26px; height: 26px; }
+.feature h3 { font-size: 1.15rem; margin-bottom: 10px; }
 .feature p { font-size: 0.95rem; margin: 0; }
 
 /* FAQ */
